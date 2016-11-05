@@ -2,7 +2,7 @@
     
     var count = 0;
     
-    $.fn.triggerClear = function() {
+    $.fn.inputClear = function() {
         
         count++;
         var _count = 0;
