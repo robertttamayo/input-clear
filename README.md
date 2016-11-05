@@ -1,7 +1,7 @@
 # Input Clear
-A jQuery plugin that makes clearing text input fields much faster and easier
-When a user types into a text input field, an "X" button appears on the right of the field that
-clears the input for the user.
+A jQuery plugin that makes clearing text input fields much faster and easier.
+When a user types into a text input field, a button appears on the right of the field that
+clears the input for the user when clicked.
 ## Usage
 Include jquery.inputClear.js after jQuery is loaded.
 
