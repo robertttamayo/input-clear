@@ -40,12 +40,24 @@
                 .css({
                     "margin": "0",
                     "position": "absolute",
-                    "top": position.top + "px",
-                    "left": (position.left + width) + "px",
+                    "top":      "calc("
+                                + position.top + "px"
+                                + " + "
+                                + $(target).css("margin-top")
+                                + ")",
+                    "left":     "calc("
+                                + (position.left + width) + "px"
+                                + " + "
+                                + $(target).css("margin-left")
+                                + ")",
                     "display": "none",
                     "height": $(target).outerHeight() + "px",
                     "padding-left": "4px",
-                    "padding-right": "4px",
+                    "padding-right":    "calc(" 
+                                        + $(target).css("padding-left")
+                                        + " + "
+                                        + $(target).css("text-indent")
+                                        + ")",
                     "cursor": "pointer",
                     "line-height": $(target).outerHeight() + "px",
                     "vertical-align": "middle",
